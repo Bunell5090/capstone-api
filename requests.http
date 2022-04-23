@@ -1,0 +1,23 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA4MzMyNzB9.8El-CGb-TFy3e_Hw3POKW2ceF2Jf75aq666ur_4y61Y
+
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "user_name": "Bunell5090",
+  "first_name": "Ben",
+  "last_name": "Unell",
+  "email": "Bunell5090@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "user_name": "Bunell5090",
+  "password": "password"
+}
