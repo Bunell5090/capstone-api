@@ -1,7 +1,7 @@
 class CustomersController < ApplicationController
 
   def create
-    customer = Cutsomer.new(
+    customer = Customer.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       address: params[:address],
