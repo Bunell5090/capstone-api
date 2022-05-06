@@ -1,3 +1,4 @@
 class Pet < ApplicationRecord
-  belongs to :customers
+  belongs_to :customers
+  has_many :appts
 end

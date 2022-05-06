@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA4MzMyNzB9.8El-CGb-TFy3e_Hw3POKW2ceF2Jf75aq666ur_4y61Y
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE4ODY2MTh9.lYxd52JqP-yBqzyhnAS6pKqXrK54Vgl92MzJrNNXRn4
 
 ### Users create (signup)
 POST http://localhost:3000/users
@@ -13,6 +13,26 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
+### Customers create
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+"first_name": "John",
+"last_name": "Jones",
+"address": "1060 W. Addison St.",
+"city_state": "Chicago, IL",
+"zipcode": "60613"
+}
+
+### Pets create
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+
+
+}
 ### Sessions create (login)
 POST http://localhost:3000/sessions
 Content-Type: application/json
