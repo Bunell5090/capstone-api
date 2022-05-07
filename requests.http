@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE4ODY2MTh9.lYxd52JqP-yBqzyhnAS6pKqXrK54Vgl92MzJrNNXRn4
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTIwNDUyMTR9.jyNYIxgIqFIjfDHMPJK2wnxwc2_0-ID2fKjRMZpUSpU
 
 ### Users create (signup)
 POST http://localhost:3000/users
@@ -18,9 +18,9 @@ POST http://localhost:3000/customers
 Content-Type: application/json
 
 {
-"first_name": "John",
-"last_name": "Jones",
-"address": "1060 W. Addison St.",
+"first_name": "Chani",
+"last_name": "Unell",
+"address": "940 W. Gordon Terrace",
 "city_state": "Chicago, IL",
 "zipcode": "60613"
 }
@@ -30,9 +30,14 @@ POST http://localhost:3000/pets
 Content-Type: application/json
 
 {
-
-
+"name": "Chloe",
+"species": "Dog",
+"breed": "Maltipoo",
+"birthday": "06-06-2020",
+"sex": "Female",
+"sterilized": "True"
 }
+
 ### Sessions create (login)
 POST http://localhost:3000/sessions
 Content-Type: application/json
