@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_06_014742) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_23_173849) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "appts", force: :cascade do |t|
-    t.integer "pets_id"
+    t.string "pet_id"
     t.string "date"
     t.string "time"
     t.string "type"

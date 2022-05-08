@@ -1,5 +1,5 @@
 class CustomersController < ApplicationController
-  # has_many :pets
+  
 
   def index
     customers = Customer.all.order(:id)

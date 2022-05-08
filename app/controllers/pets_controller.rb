@@ -1,6 +1,4 @@
 class PetsController < ApplicationController
-  # has_many :appts
-  # belongs_to :customers
 
   def index
     pets = Pet.all.order(:id)
@@ -10,7 +8,7 @@ class PetsController < ApplicationController
   def create
     pet = Pet.new(
       name: params[:name],
-      # customer_id: params[:customer_id],
+      customer_id: params[:customer_id],
       species: params[:species],
       breed: params[:breed],
       birthday: params[:birthday],

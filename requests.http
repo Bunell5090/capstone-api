@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTIwNDUyMTR9.jyNYIxgIqFIjfDHMPJK2wnxwc2_0-ID2fKjRMZpUSpU
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTIxMDc1NTh9.e-bzL2TAODMWQg8Ve1RktR_RpyKkoBTHe7jpYAtVquc
 
 ### Users create (signup)
 POST http://localhost:3000/users
@@ -31,11 +31,12 @@ Content-Type: application/json
 
 {
 "name": "Chloe",
+"customer_id": 1,
 "species": "Dog",
 "breed": "Maltipoo",
 "birthday": "06-06-2020",
 "sex": "Female",
-"sterilized": "True"
+"sterilized": true
 }
 
 ### Sessions create (login)
