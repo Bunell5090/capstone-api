@@ -1,5 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTIxMDc1NTh9.e-bzL2TAODMWQg8Ve1RktR_RpyKkoBTHe7jpYAtVquc
-
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTIyMjk2MzB9.c_zLLFna_tuN6qWvppw7k8rVLFLJ8Tzuo00Ym_ujEOY
 ### Users create (signup)
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -47,3 +46,8 @@ Content-Type: application/json
   "user_name": "Bunell5090",
   "password": "password"
 }
+
+### Show Pets
+GET http://localhost:3000/pets/1
+Content-Type: application/json
+

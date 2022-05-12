@@ -1,8 +1,13 @@
 class PetsController < ApplicationController
 
   def index
-    pets = Pet.all.order(:id)
-    render json: pets
+    pet = Pet.all.order(:id)
+    render json: pet
+  end
+
+   def show
+    pet = Pet.find_by(id: params[:id])
+    render json: pet
   end
 
   def create
