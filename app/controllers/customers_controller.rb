@@ -2,8 +2,13 @@ class CustomersController < ApplicationController
   
 
   def index
-    customers = Customer.all.order(:id)
-    render json: customers
+    customer = Customer.all.order(:id)
+    render json: customer
+  end
+
+  def show
+    customer = Customer.find_by(id: params[:id])
+    render json: customer
   end
 
   def create
@@ -21,19 +26,19 @@ class CustomersController < ApplicationController
     end
   end
 
-  def update
-    id = params[:id]
-    customer = Customer.find_by(id: id)
-    customer.first_name = params["first_name"] || customer.first_name
-    customer.last_name = params["last_name"] || customer.last_name
-    customer.address = params["address"] || customer.address
-    customer.city_state = params["city_state"] || customer.city_state
-    customer.zipcode = params["zipcode"] || customer.zipcode
-    if customer.save #happy path
-      render json: customer
-    else #sad path
-      render json: {error_messages: customer.errors.full_messages}, status: 422
-    end
+  # def update
+  #   id = params[:id]
+  #   customer = Customer.find_by(id: id)
+  #   customer.first_name = params["first_name"] || customer.first_name
+  #   customer.last_name = params["last_name"] || customer.last_name
+  #   customer.address = params["address"] || customer.address
+  #   customer.city_state = params["city_state"] || customer.city_state
+  #   customer.zipcode = params["zipcode"] || customer.zipcode
+  #   if customer.save #happy path
+  #     render json: customer
+  #   else #sad path
+  #     render json: {error_messages: customer.errors.full_messages}, status: 422
+  #   end
   end
 
   def destroy
