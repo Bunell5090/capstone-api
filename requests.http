@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTIyMjk2MzB9.c_zLLFna_tuN6qWvppw7k8rVLFLJ8Tzuo00Ym_ujEOY
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI0OTA4MDh9.8tuliphk2O-a3bycgXZ0uzlFMbtzKk697_yp8gIegCk
 ### Users create (signup)
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -51,3 +51,6 @@ Content-Type: application/json
 GET http://localhost:3000/pets/1
 Content-Type: application/json
 
+### Show Customers
+GET http://localhost:3000/customers/1
+Content-Type: application/json

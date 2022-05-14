@@ -39,7 +39,7 @@ class CustomersController < ApplicationController
   #   else #sad path
   #     render json: {error_messages: customer.errors.full_messages}, status: 422
   #   end
-  end
+  # end
 
   def destroy
     customer_id = params["id"]
