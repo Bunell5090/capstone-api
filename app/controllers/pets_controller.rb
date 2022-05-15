@@ -17,7 +17,7 @@ class PetsController < ApplicationController
       species: params[:species],
       breed: params[:breed],
       birthday: params[:birthday],
-      sex: params[:sex],
+      gender: params[:gender],
       sterilized: params[:sterilized]
     )
     if pet.save
@@ -34,7 +34,7 @@ class PetsController < ApplicationController
   #   pet.customer_id = params["customer_id"] || pet.customer_id
   #   pet.species = params["species"] || pet.species
   #   pet.breed = params["breed"] || pet.breed
-  #   pet.sex = params["sex"] || pet.sex
+  #   pet.gender = params["gender"] || pet.gender
   #   pet.sterilized = params["sterilized"] || pet.sterilized
   #   if pet.save #happy path
   #     render json: pet
