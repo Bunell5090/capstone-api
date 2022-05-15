@@ -34,7 +34,7 @@ Content-Type: application/json
 "species": "Dog",
 "breed": "Maltipoo",
 "birthday": "06-06-2020",
-"sex": "Female",
+"gender": "Female",
 "sterilized": true
 }
 
