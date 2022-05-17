@@ -1,7 +1,7 @@
 # Customer.create!([
-#   {first_name: "Chani", last_name: "Unell", address: "940 W. Gordon Terrace", city_state: "Chicago, IL", zipcode: "60613"},
-#   {first_name: "James", last_name: "Smith", address: "1200 E. Devon ave.", city_state: "Chicago, IL", zipcode: "60659"},
-#   {first_name: "John", last_name: "Connor", address: "243 W. 76th St.", city_state: "Chicago, IL", zipcode: "60660"}
+#   {first_name: "Chani", last_name: "Unell", address: "940 W. Gordon Terrace", city: "Chicago", state: "IL", zipcode: "60613"},
+#   {first_name: "James", last_name: "Smith", address: "1200 E. Devon ave.", city: "Chicago", state: "IL", zipcode: "60659"},
+#   {first_name: "John", last_name: "Connor", address: "243 W. 76th St.", city: "Chicago", state: "IL", zipcode: "60660"}
 # ])
 # Pet.create!([
 #   {name: "Chloe", customer_id: "1", species: "Dog", breed: "Maltipoo", birthday: "06-06-2020", gender: "Female", sterilized: true, image: nil},

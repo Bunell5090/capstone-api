@@ -16,7 +16,8 @@ class CustomersController < ApplicationController
       first_name: params[:first_name],
       last_name: params[:last_name],
       address: params[:address],
-      city_state: params[:city_state],
+      city: params[:city],
+      state: params[:state],
       zipcode: params[:zipcode]
     )
     if customer.save
@@ -26,20 +27,21 @@ class CustomersController < ApplicationController
     end
   end
 
-  # def update
-  #   id = params[:id]
-  #   customer = Customer.find_by(id: id)
-  #   customer.first_name = params["first_name"] || customer.first_name
-  #   customer.last_name = params["last_name"] || customer.last_name
-  #   customer.address = params["address"] || customer.address
-  #   customer.city_state = params["city_state"] || customer.city_state
-  #   customer.zipcode = params["zipcode"] || customer.zipcode
-  #   if customer.save #happy path
-  #     render json: customer
-  #   else #sad path
-  #     render json: {error_messages: customer.errors.full_messages}, status: 422
-  #   end
-  # end
+  def update
+    id = params[:id]
+    customer = Customer.find_by(id: id)
+    customer.first_name = params["first_name"] || customer.first_name
+    customer.last_name = params["last_name"] || customer.last_name
+    customer.address = params["address"] || customer.address
+    customer.city = params["city"] || customer.city
+    customer.state = params["state"] || customer.state
+    customer.zipcode = params["zipcode"] || customer.zipcode
+    if customer.save #happy path
+      render json: customer
+    else #sad path
+      render json: {error_messages: customer.errors.full_messages}, status: 422
+    end
+  end
 
   def destroy
     customer_id = params["id"]

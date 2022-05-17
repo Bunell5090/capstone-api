@@ -20,7 +20,8 @@ Content-Type: application/json
 "first_name": "Chani",
 "last_name": "Unell",
 "address": "940 W. Gordon Terrace",
-"city_state": "Chicago, IL",
+"city": "Chicago",
+"state": "IL",
 "zipcode": "60613"
 }
 
