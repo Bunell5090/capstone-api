@@ -1,13 +1,14 @@
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI0OTA4MDh9.8tuliphk2O-a3bycgXZ0uzlFMbtzKk697_yp8gIegCk
+
 ### Users create (signup)
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "user_name": "Bunell5090",
-  "first_name": "Ben",
-  "last_name": "Unell",
-  "email": "Bunell5090@test.com",
+  "user_name": "JoeBlow123",
+  "first_name": "Joe",
+  "last_name": "Blow",
+  "position": "Vet Tech",
   "password": "password",
   "password_confirmation": "password"
 }
